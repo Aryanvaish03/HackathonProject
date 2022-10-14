@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "552215838643",
+    "project_id": "hackoutproject",
+    "storage_bucket": "hackoutproject.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:552215838643:android:404e4492d1e5e00b4015c6",
+        "android_client_info": {
+          "package_name": "com.example.android.hackathonproject"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "552215838643-h1d4ct86baofv04g6t3te9agiqks8ndv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBstMMRaX4148WgMXcTXiBbuBapPAmQ05Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "552215838643-h1d4ct86baofv04g6t3te9agiqks8ndv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
