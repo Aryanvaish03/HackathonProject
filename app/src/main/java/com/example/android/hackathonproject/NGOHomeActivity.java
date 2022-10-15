@@ -14,6 +14,9 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageView;
 
+import com.example.android.hackathonproject.Fragments.ngoHistoryFragment;
+import com.example.android.hackathonproject.Fragments.ngoHome;
+import com.example.android.hackathonproject.Fragments.ngo_Fragment_ManageRequests;
 import com.google.firebase.auth.FirebaseAuth;
 
 public class NGOHomeActivity extends AppCompatActivity {
@@ -37,7 +40,7 @@ public class NGOHomeActivity extends AppCompatActivity {
                 history.setBackgroundResource(R.color.white);
                 profile.setBackgroundResource(R.color.white);
                 home.setBackgroundResource(R.color.teal_200);
-                replaceFragment(new HomeFragment());
+                replaceFragment(new ngoHome());
             }
         });
         manage.setOnClickListener(new View.OnClickListener(){
@@ -48,7 +51,7 @@ public class NGOHomeActivity extends AppCompatActivity {
                 history.setBackgroundResource(R.color.white);
                 profile.setBackgroundResource(R.color.white);
                 manage.setBackgroundResource(R.color.teal_200);
-                replaceFragment(new ProfileFragment());
+                replaceFragment(new ngo_Fragment_ManageRequests());
             }
         });
         history.setOnClickListener(new View.OnClickListener(){
@@ -59,7 +62,7 @@ public class NGOHomeActivity extends AppCompatActivity {
                 home.setBackgroundResource(R.color.white);
                 profile.setBackgroundResource(R.color.white);
                 history.setBackgroundResource(R.color.teal_200);
-                replaceFragment(new AddFragment());
+                replaceFragment(new ngoHistoryFragment());
             }
         });
         profile.setOnClickListener(new View.OnClickListener(){

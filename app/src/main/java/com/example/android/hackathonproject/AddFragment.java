@@ -43,7 +43,7 @@ public class AddFragment extends Fragment {
         auth = FirebaseAuth.getInstance();
         database = FirebaseDatabase.getInstance();
         progressDialog = new ProgressDialog(getContext());
-        progressDialog.setMessage("Uploading Your Recipe");
+        progressDialog.setMessage("Processing Your Request");
 
         Button submit;
         EditText foodItems, feedCount;
@@ -80,7 +80,7 @@ public class AddFragment extends Fragment {
                 post.setDate(new Date());
                 post.setFeedCount(fedCount);
                 post.setFoodItems(foodDetails);
-                post.setPostedBy(auth.getUid());
+                post.setPostedBy(auth.getUid().toString());
                 post.setStatus("UNACCEPTED");
 
               database.getReference().child("FoodPosts").push().setValue(post).addOnCompleteListener(new OnCompleteListener<Void>() {
@@ -88,6 +88,7 @@ public class AddFragment extends Fragment {
                   public void onComplete(@NonNull Task<Void> task) {
                       if (task.isSuccessful()) {
                           Toast.makeText(getContext(), "Successfully Uploaded", Toast.LENGTH_SHORT).show();
+                          progressDialog.hide();
                       }
                   }
                                                                                                      }
@@ -95,6 +96,9 @@ public class AddFragment extends Fragment {
                   @Override
                   public void onFailure(@NonNull Exception e) {
                       Toast.makeText(getContext(), "" + e.getMessage(), Toast.LENGTH_SHORT).show();
+                      progressDialog.hide();
+
+
                   }
 
               });

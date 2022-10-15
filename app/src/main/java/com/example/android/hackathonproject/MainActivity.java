@@ -52,7 +52,7 @@ public class MainActivity extends AppCompatActivity {
                 add.setBackgroundResource(R.color.white);
                 profile.setBackgroundResource(R.color.white);
                 manage.setBackgroundResource(R.color.teal_200);
-                replaceFragment(new ProfileFragment());
+                replaceFragment(new ManageFragment());
             }
         });
         add.setOnClickListener(new View.OnClickListener(){
