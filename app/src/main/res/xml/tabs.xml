@@ -3,19 +3,20 @@
 
     <tab
         drawable="@drawable/home"
-        text="@string/home" />
-
+        text="@string/home"
+        />
     <tab
-        drawable="@drawable/clipboard"
-        text="@string/manage" />
+        drawable="@drawable/plus"
+        text="@string/add"
+        />
 
     <tab
         drawable="@drawable/history"
-        text="@string/history"/>
+        text="@string/profile"
+        />
 
     <tab
         drawable="@drawable/profile"
-        text="@string/profile" />
-
-
+        text="@string/profile"
+        />
 </Tabs>

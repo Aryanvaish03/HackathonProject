@@ -7,4 +7,7 @@
     <string name="manage">Manage</string>
     <string name="history">History</string>
     <string name="profile">Profile</string>
+    <string name="title_home" />
+    <string name="title_dashboard" />
+    <string name="title_notifications" />
 </resources>
