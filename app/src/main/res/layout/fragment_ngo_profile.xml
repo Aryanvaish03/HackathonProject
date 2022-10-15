@@ -6,6 +6,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".Fragments.NgoProfile">
 
+
     <ImageView
         android:id="@+id/back_arrow"
         android:layout_width="60dp"
@@ -32,7 +33,7 @@
             android:layout_width="150dp"
             android:layout_height="150dp"
             android:layout_gravity="center"
-            android:src="@drawable/ic_baseline_add_24"
+            android:src="@drawable/pluss"
             app:civ_border_color="#FF000000"
             app:civ_border_width="2dp" />
 
@@ -44,9 +45,7 @@
             android:layout_gravity="center"
             android:layout_marginLeft="30dp"
             android:layout_marginTop="-30dp"
-            android:src="@drawable/ic_baseline_add_24"
-
-            />
+            android:src="@drawable/pluss"/>
 
 
         <LinearLayout
@@ -94,9 +93,7 @@
 
                 android:textColor="@color/black"
                 android:textSize="20sp"
-                android:textStyle="bold"
-
-                />
+                android:textStyle="bold"/>
 
             <EditText
                 android:id="@+id/etAbout"
@@ -118,10 +115,10 @@
 
         android:layout_below="@id/profileLinearLayout"
         android:layout_alignRight="@+id/profileLinearLayout"
-        android:background="@color/purple_500"
+        android:background="@color/white"
         android:padding="5dp"
         android:text="Save"
-        android:textColor="@color/white"
+        android:textColor="@color/orange"
         android:textSize="18sp" />
 
     <androidx.appcompat.widget.AppCompatButton
@@ -130,12 +127,10 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/profileLinearLayout"
         android:layout_alignLeft="@id/profileLinearLayout"
-        android:background="@color/purple_500"
+        android:background="@color/white"
         android:padding="5dp"
         android:text="Edit"
-        android:textColor="@color/white"
+        android:textColor="@color/orange"
         android:textSize="18sp" />
-
-
 
 </FrameLayout>
