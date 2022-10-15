@@ -5,6 +5,7 @@
     <string name="name">Enter Pickup Person Name</string>
     <string name="contact">Enter Pickup Person Contact No</string>
     <string name="ngoDetails">Request Details</string>
+    <string name="ngocollect">Collection Requests</string>
     <string name="title_activity_ngo_navigation_bar">NGO_navigation_bar</string>
     <string name="home">Home</string>
     <string name="manage">Manage</string>

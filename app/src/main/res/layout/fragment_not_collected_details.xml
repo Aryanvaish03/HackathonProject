@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.NgoDetailsFood">
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="@string/ngoDetails"
+        android:background="@color/purple_500"
+        android:textSize="25sp"
+        android:textColor="@color/white"
+        android:gravity="center" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="550dp"
+        android:layout_marginTop="100dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="20dp">
+
+            <TextView
+                android:id="@+id/user"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Name : Sushant Kumar"
+                android:padding="2dp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_marginBottom="20dp"
+                android:textSize="25sp"/>
+
+            <TextView
+                android:id="@+id/foodcount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Feed Count: 30"
+                android:padding="2dp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_marginBottom="20dp"
+                android:textSize="25sp"/>
+
+            <TextView
+                android:id="@+id/fooddetails"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Food Details: Puri, Rice, Cauliflower Vegetable, Pulses"
+                android:padding="2dp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_marginBottom="15dp"
+                android:textSize="25sp"/>
+
+            <TextView
+                android:id="@+id/address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Address: Plot No. 4, Main VijayNagar Road, Patna, Bihar-123456"
+                android:padding="2dp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_marginBottom="15dp"
+                android:textSize="25sp"/>
+
+            <TextView
+                android:id="@+id/phoneno"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Contact No: 9990936368"
+                android:padding="2dp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_marginBottom="15dp"
+                android:textSize="25sp"/>
+
+            <TextView
+                android:id="@+id/Date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Date : 15.10.2022"
+                android:padding="2dp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_marginBottom="15dp"
+                android:textSize="25sp"/>
+
+            <TextView
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="15dp"
+                android:text="NGO Name: Baba BauuaNath Vikas Dham Sanstha"
+                android:gravity="center"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:id="@+id/NGOName"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_gravity="center"
+                android:layout_height="50dp"
+                android:text="Collected By : Mr. Sushi Kumar"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="15dp"
+                android:gravity="center"
+                android:id="@+id/EName"/>
+
+            <TextView
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="15dp"
+                android:text="Phone Number: 9192939495"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:id="@+id/EPhone"/>
+
+        </LinearLayout>
+
+
+
+    </ScrollView>
+
+
+
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="680dp"
+        android:layout_marginBottom="5dp"
+        android:text="Approve"/>
+
+</FrameLayout>
