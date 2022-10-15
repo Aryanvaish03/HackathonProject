@@ -28,6 +28,7 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
             android:layout_toRightOf="@id/img"
+            android:layout_marginBottom="10dp"
             android:text="Posted by"
             android:textColor="#000"
             android:textSize="25sp"
@@ -37,6 +38,7 @@
             android:id="@+id/count"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
             android:layout_below="@id/name"
             android:layout_marginLeft="20dp"
             android:layout_toRightOf="@id/img"
@@ -48,6 +50,7 @@
             android:id="@+id/location"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
             android:layout_below="@id/count"
             android:layout_marginLeft="20dp"
             android:layout_toRightOf="@id/img"
@@ -65,15 +68,6 @@
             android:text="Date Posted"
             android:textSize="20sp" />
 
-
-        <Button
-            android:layout_width="220dp"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/date"
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop="4dp"
-            android:layout_toRightOf="@id/img"
-            android:text="View details" />
 
 
     </RelativeLayout>
