@@ -1,7 +1,37 @@
 package com.example.android.hackathonproject.Models;
 public class User {
 
-    String profilepic , userName, email, password, Address, Locality, City, PinCode,UserType;
+    String profilepic;
+    String userName;
+    String email;
+    String password;
+    String Address;
+    String Locality;
+    String City;
+    String PinCode;
+    String UserType;
+    String phoneNumber;
+    String about;
+
+    public String getAbout() {
+        return about;
+    }
+
+    public void setAbout(String about) {
+        this.about = about;
+    }
+
+
+
+    public String getPhoneNumber() {
+        return phoneNumber;
+    }
+
+    public void setPhoneNumber(String phoneNumber) {
+        this.phoneNumber = phoneNumber;
+    }
+
+
 
 
     User(){}
@@ -15,7 +45,7 @@ public class User {
     }
 
 
-    public User( String userName, String email, String password, String address, String locality, String city, String pinCode,String userType) {
+    public User( String userName, String email, String password, String address, String locality, String city, String pinCode,String userType,String phoneNumber) {
         this.userName = userName;
         this.email = email;
         this.password = password;
@@ -24,6 +54,7 @@ public class User {
         City= city;
         PinCode = pinCode;
         UserType=userType;
+        this.phoneNumber=phoneNumber;
     }
 
     public String getProfilepic() {

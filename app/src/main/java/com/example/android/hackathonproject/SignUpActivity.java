@@ -61,6 +61,8 @@ public class SignUpActivity extends AppCompatActivity {
         etLocality=findViewById(R.id.etLocality);
         etCity= findViewById(R.id.etCity);
         etPincode=findViewById(R.id.etPincode);
+        EditText etPhoneNumber = findViewById(R.id.etPhoneNumber);
+
 
 
         progressDialog = new ProgressDialog(SignUpActivity.this);
@@ -96,7 +98,7 @@ public class SignUpActivity extends AppCompatActivity {
                 String city = etCity.getText().toString();
                 String pincode = etPincode.getText().toString();
 
-
+                String phoneNo= etPhoneNumber.getText().toString();
 
                 String userType= dropdown.getSelectedItem().toString();
 
@@ -145,13 +147,18 @@ public class SignUpActivity extends AppCompatActivity {
                     return;
                 }
 
+                if (TextUtils.isEmpty(phoneNo)){
+                    etEmailSignUp.setError("PhoneNumber is Required");
+                    progressDialog.hide();
+                    return;
+                }
                 mAuth.createUserWithEmailAndPassword(email,password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         progressDialog.dismiss();
                         if(task.isSuccessful()){
 
-                            User user = new User(name,email, password,address, locality ,city , pincode, userType);
+                            User user = new User(name,email, password,address, locality ,city , pincode, userType,phoneNo);
 
                             String id = task.getResult().getUser().getUid();
 

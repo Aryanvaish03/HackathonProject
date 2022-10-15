@@ -5,7 +5,38 @@ import java.util.Date;
 public class FoodPost {
 
 
-    String postedBy, foodItems , feedCount, status;
+    String postedBy;
+    String foodItems;
+    String feedCount;
+    String status;
+    String acceptedBy;
+    String employeeName;
+
+    public String getAcceptedBy() {
+        return acceptedBy;
+    }
+
+    public void setAcceptedBy(String acceptedBy) {
+        this.acceptedBy = acceptedBy;
+    }
+
+    public String getEmployeeName() {
+        return employeeName;
+    }
+
+    public void setEmployeeName(String employeeName) {
+        this.employeeName = employeeName;
+    }
+
+    public String getEmployeeNumber() {
+        return employeeNumber;
+    }
+
+    public void setEmployeeNumber(String employeeNumber) {
+        this.employeeNumber = employeeNumber;
+    }
+
+    String employeeNumber;
     Date date;
 
     public FoodPost(){}

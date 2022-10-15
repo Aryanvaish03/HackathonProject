@@ -7,14 +7,6 @@
     tools:context=".Fragments.NgoProfile">
 
 
-    <ImageView
-        android:id="@+id/back_arrow"
-        android:layout_width="60dp"
-        android:layout_height="40dp"
-        android:layout_marginTop="5dp"
-        android:src="@drawable/back_arrow"
-        app:tint="@color/black" />
-
     <LinearLayout
         android:id="@+id/profileLinearLayout"
         android:layout_width="match_parent"
@@ -32,7 +24,7 @@
             android:layout_width="150dp"
             android:layout_height="150dp"
             android:layout_gravity="center"
-            android:src="@drawable/pluss"
+            android:src="@drawable/user_avatar"
             app:civ_border_color="#FF000000"
             app:civ_border_width="2dp" />
 
@@ -124,7 +116,7 @@
                 android:textStyle="bold" />
 
             <EditText
-                android:id="@+id/edAddress"
+                android:id="@+id/etAddress"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
@@ -153,7 +145,7 @@
                 android:textStyle="bold" />
 
             <EditText
-                android:id="@+id/edContact"
+                android:id="@+id/etContact"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
