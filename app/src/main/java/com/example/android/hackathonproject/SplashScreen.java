@@ -38,5 +38,8 @@ public class SplashScreen extends AppCompatActivity {
         };
 
         timer.schedule(timerTask,10,10);
+
+        startActivity(new Intent(SplashScreen.this,LoginActivity.class));
+        finish();
     }
 }

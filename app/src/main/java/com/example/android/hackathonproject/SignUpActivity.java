@@ -164,7 +164,7 @@ public class SignUpActivity extends AppCompatActivity {
                                 startActivity(new Intent(SignUpActivity.this, NGOHomeActivity.class));
                             }
                             else {
-                                startActivity(new Intent(SignUpActivity.this, MainActivity.class));
+                                startActivity(new Intent(SignUpActivity.this, UserMainPage.class));
 
                             }
 
