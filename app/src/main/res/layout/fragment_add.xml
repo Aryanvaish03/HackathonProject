@@ -4,12 +4,75 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".AddFragment"
-    android:background="@color/purple_700">
+    android:background="@color/white">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="add fragment" />
+        android:layout_marginStart="1dp"
+        android:layout_marginEnd="1dp"
+        android:backgroundTint="#CC8F8F"
+        android:orientation="vertical"
+ >
+
+        <TextView
+            android:id="@+id/heading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="#F4F4F4"
+            android:backgroundTint="#FFFFFF"
+            android:fontFamily="sans-serif-black"
+            android:shadowColor="#D66060"
+            android:text="Upload Food Details..."
+            android:textAlignment="center"
+            android:textColor="#FF5722"
+            android:textSize="48sp"
+            />
+        <EditText
+            android:id="@+id/uploadFood"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="300dp"
+            android:layout_margin="20dp"
+            android:layout_marginBottom="20dp"
+            android:background="#FFD8CB"
+            android:gravity="center"
+            android:hint="Enter food item details...."
+            android:textSize="20sp"
+            />
+
+        <EditText
+            android:id="@+id/feedEnter"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:layout_marginTop="10dp"
+
+            android:ems="10"
+            android:hint="Enter Feed Count"
+            android:inputType="number"
+            android:textAlignment="center"
+            android:textColorHint="#8FFF5722"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/submitButton"
+            android:layout_width="300dp"
+            android:layout_height="83dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="40dp"
+            android:backgroundTint="#FF5722"
+            android:fontFamily="sans-serif-black"
+            android:padding="10dp"
+            android:text="submit"
+            android:textSize="24sp" />
+    </LinearLayout>
+
+
 
 </FrameLayout>

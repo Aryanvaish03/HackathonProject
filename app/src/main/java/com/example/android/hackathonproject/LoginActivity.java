@@ -21,6 +21,7 @@ import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
@@ -49,10 +50,12 @@ public class LoginActivity extends AppCompatActivity {
         EditText EmailLogin = findViewById(R.id.etEmailLogin);
         EditText PasswordLogin = findViewById(R.id.etPasswordLogin);
         Button btnLogin= findViewById(R.id.btnLogin);
-
+        DatabaseReference reference = database.getReference().child("Users");
+        reference.keepSynced(true);
         if(mAuth.getCurrentUser()!=null)
         {
-            database.getReference().child("Users").child(mAuth.getUid()).addValueEventListener(new ValueEventListener() {
+
+            reference.child(mAuth.getUid()).addValueEventListener(new ValueEventListener() {
                 @Override
                 public void onDataChange(@NonNull DataSnapshot snapshot) {
                     User user = snapshot.getValue(User.class);
@@ -100,7 +103,7 @@ public class LoginActivity extends AppCompatActivity {
 
                         if(task.isSuccessful())
                         {
-                            database.getReference().child("Users").child(mAuth.getUid()).addValueEventListener(new ValueEventListener() {
+                            reference.child(mAuth.getUid()).addValueEventListener(new ValueEventListener() {
                                 @Override
                                 public void onDataChange(@NonNull DataSnapshot snapshot) {
                                     User user = snapshot.getValue(User.class);
