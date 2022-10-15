@@ -2,6 +2,7 @@ package com.example.android.hackathonproject;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.widget.ProgressBar;
 
@@ -30,6 +31,8 @@ public class SplashScreen extends AppCompatActivity {
                 if(counter==100)
                 {
                     timer.cancel();
+                    startActivity(new Intent(SplashScreen.this,NGOHomeActivity.class));
+
                 }
             }
         };
