@@ -16,7 +16,7 @@
         />
 
     <tab
-        drawable="@drawable/profile"
+        drawable="@drawable/user"
         text="@string/profile"
         />
 </Tabs>
