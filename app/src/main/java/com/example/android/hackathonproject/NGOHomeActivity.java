@@ -14,6 +14,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageView;
 
+import com.example.android.hackathonproject.Fragments.NgoProfile;
 import com.example.android.hackathonproject.Fragments.ngoHistoryFragment;
 import com.example.android.hackathonproject.Fragments.ngoHome;
 import com.example.android.hackathonproject.Fragments.ngo_Fragment_ManageRequests;
@@ -73,7 +74,7 @@ public class NGOHomeActivity extends AppCompatActivity {
                 history.setBackgroundResource(R.color.white);
                 home.setBackgroundResource(R.color.white);
                 profile.setBackgroundResource(R.color.teal_200);
-                replaceFragment(new ProfileFragment());
+                replaceFragment(new NgoProfile());
             }
         });
 
