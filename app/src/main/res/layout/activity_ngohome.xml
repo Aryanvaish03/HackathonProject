@@ -8,6 +8,7 @@
     tools:context=".NGOHomeActivity">
 
     <LinearLayout
+        android:id="@+id/layout"
         android:layout_width="match_parent"
         android:layout_height="620dp"
         android:orientation="vertical">
@@ -29,32 +30,32 @@
         app:layout_constraintStart_toStartOf="parent">
 
         <ImageView
-            android:id="@+id/imageView4"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            app:srcCompat="@drawable/user" />
-
-        <ImageView
-            android:id="@+id/imageView"
+            android:id="@+id/home_ngo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             app:srcCompat="@drawable/home" />
 
         <ImageView
-            android:id="@+id/imageView2"
+            android:id="@+id/manage_ngo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             app:srcCompat="@drawable/clipboard" />
 
         <ImageView
-            android:id="@+id/imageView3"
+            android:id="@+id/history_ngo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             app:srcCompat="@drawable/history" />
+
+        <ImageView
+            android:id="@+id/profile_ngo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/user" />
     </LinearLayout>
 
 

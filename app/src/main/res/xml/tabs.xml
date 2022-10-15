@@ -7,7 +7,7 @@
         />
     <tab
         drawable="@drawable/plus"
-        text="@string/add"
+        text="Add"
         />
 
     <tab
