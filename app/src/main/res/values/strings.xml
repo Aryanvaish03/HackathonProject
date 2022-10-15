@@ -2,4 +2,9 @@
     <string name="app_name">HackathonProject</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_ngo_navigation_bar">NGO_navigation_bar</string>
+    <string name="home">Home</string>
+    <string name="manage">Manage</string>
+    <string name="history">History</string>
+    <string name="profile">Profile</string>
 </resources>
