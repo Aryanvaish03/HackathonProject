@@ -31,7 +31,9 @@ public class SplashScreen extends AppCompatActivity {
                 if(counter==100)
                 {
                     timer.cancel();
-                    startActivity(new Intent(SplashScreen.this,NGOHomeActivity.class));
+                    startActivity(new Intent(SplashScreen.this,LoginActivity.class));
+                    finish();
+
 
                 }
             }
@@ -39,7 +41,5 @@ public class SplashScreen extends AppCompatActivity {
 
         timer.schedule(timerTask,10,10);
 
-        startActivity(new Intent(SplashScreen.this,LoginActivity.class));
-        finish();
     }
 }

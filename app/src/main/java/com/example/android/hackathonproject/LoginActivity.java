@@ -51,7 +51,6 @@ public class LoginActivity extends AppCompatActivity {
         EditText PasswordLogin = findViewById(R.id.etPasswordLogin);
         Button btnLogin= findViewById(R.id.btnLogin);
         DatabaseReference reference = database.getReference().child("Users");
-        reference.keepSynced(true);
         if(mAuth.getCurrentUser()!=null)
         {
 
