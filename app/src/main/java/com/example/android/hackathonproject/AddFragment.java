@@ -77,10 +77,12 @@ public class AddFragment extends Fragment {
 
                 }
 
+
+
                 post.setDate(new Date());
                 post.setFeedCount(fedCount);
                 post.setFoodItems(foodDetails);
-                post.setPostedBy(auth.getUid().toString());
+                post.setPostedBy(auth.getUid());
                 post.setStatus("UNACCEPTED");
 
               database.getReference().child("FoodPosts").push().setValue(post).addOnCompleteListener(new OnCompleteListener<Void>() {

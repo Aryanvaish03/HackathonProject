@@ -1,5 +1,7 @@
 package com.example.android.hackathonproject.Models;
 
+import com.google.firebase.database.DataSnapshot;
+
 import java.util.Date;
 
 public class FoodPost {
@@ -11,6 +13,34 @@ public class FoodPost {
     String status;
     String acceptedBy;
     String employeeName;
+
+    String FoodProviderCity;
+    String FoodProviderImage;
+    String FoodProviderName;
+
+    public String getFoodProviderCity() {
+        return FoodProviderCity;
+    }
+
+    public void setFoodProviderCity(String foodProviderCity) {
+        FoodProviderCity = foodProviderCity;
+    }
+
+    public String getFoodProviderImage() {
+        return FoodProviderImage;
+    }
+
+    public void setFoodProviderImage(String foodProviderImage) {
+        FoodProviderImage = foodProviderImage;
+    }
+
+    public String getFoodProviderName() {
+        return FoodProviderName;
+    }
+
+    public void setFoodProviderName(String foodProviderName) {
+        FoodProviderName = foodProviderName;
+    }
 
     public String getAcceptedBy() {
         return acceptedBy;
@@ -47,6 +77,14 @@ public class FoodPost {
         this.status = status;
         this.date = date;
     }
+//
+//    public FoodPost(DataSnapshot foodPost)
+//    {
+//        this.foodItems=foodPost.child("foodItems").getValue().toString();
+//        this.feedCount=foodPost.child("feedCount").getValue().toString();
+//        this.status=foodPost.child("status").getValue().toString();
+//        this.date=(Date)foodPost.child("date").getValue();
+//    }
 
     public String getPostedBy() {
         return postedBy;
